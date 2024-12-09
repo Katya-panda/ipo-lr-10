@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Collection</title>
+    <style>
+        body {{
+            background-image: url('https://img.freepik.com/fotos-kostenlos/ultradetaillierte-nebel-abstrakte-tapete-4_1562-749.jpg?t=st=1732563130~exp=1732566730~hmac=85b5909f71c37b0be3ed65118fb84a743f5d13c7f19160b544f26ad3592c60d5&w=1060');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }}
+        h1 {{
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }}
+        table {{
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }}
+        th, td {{
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }}
+        th {{
+            background-color: #f2f2f2;
+            font-size: 18px;
+        }}
+        tr:nth-child(even) {{
+            background-color: #f9f9f9;
+        }}
+        tr:hover {{
+            background-color: #d1e7dd;
+        }}
+        a {{
+            color: #ff6f61;
+            text-decoration: none;
+            font-weight: bold;
+        }}
+        .footer {{
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }}
+    </style>
+</head>
+<body>
+    <h1>Quotes Collection</h1>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Quote</th>
+            <th>Author</th>
+        </tr>
+        {quotes_rows}
+    </table>
+    <div class="footer">
+        <p>Источник данных: <a href="https://quotes.toscrape.com/">quotes.toscrape.com</a></p>
+    </div>
+</body>
+</html>
